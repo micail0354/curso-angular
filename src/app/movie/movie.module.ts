@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MovieRoutingModule } from './movie-routing.module';
 import {MovieListComponent} from "./movie-list/movie-list.component";
 import {MovieInfoComponent} from "./movie-info/movie-info.component";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -12,7 +12,8 @@ import {FormsModule} from "@angular/forms";
   imports: [
     CommonModule,
     MovieRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class MovieModule { }
