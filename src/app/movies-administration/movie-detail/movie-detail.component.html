@@ -1,0 +1,17 @@
+<p>movie-detail works!</p>
+<div *ngIf="movie" style="text-align: center">
+
+  <p>Editar la informacion de una pelicula</p>
+
+  <label>Título</label>
+  <input type="text" [(ngModel)]="movie.title">
+  <br>
+
+  <label>Género</label>
+  <input type="text" [(ngModel)]="movie.genre">
+  <br>
+
+  <label>Año de Lanzamiento</label>
+  <input type="number" [(ngModel)]="movie.year">
+  <br>
+</div>

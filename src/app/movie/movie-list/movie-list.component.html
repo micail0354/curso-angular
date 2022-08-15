@@ -1,0 +1,13 @@
+<p>movie-list works!</p>
+<div style="text-align: center">
+  <p>Mostrando el listado de peliculas</p>
+
+  <div *ngFor="let movie of movies" [class.selected]="movie === movieSelected">
+    <p style="display: flex; justify-content: space-evenly">
+      <span>{{movie.showMovie()}}</span>
+      <span> Año {{movie.year}}</span>
+      <button (click)="goToDetail(movie)">Modificar</button>
+    </p>
+  </div>
+
+</div>
